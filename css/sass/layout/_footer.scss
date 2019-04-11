@@ -1,0 +1,24 @@
+/*START FOOTER*/
+.footer{
+    padding: $padding - 30px;
+    background-color: $back-green;
+    color: $text-Color2;
+    font-size: 21px;
+    font-weight: bold;
+    
+    @include Sm {
+            text-align: center;
+                font-size: 15px;
+        }
+         @include Md {
+            text-align: center;
+
+        }
+    .des{
+        @include Lg {
+            float: right;
+
+        }
+    }
+}
+/*END FOOTER*/

@@ -1,0 +1,17 @@
+/*START SIGN IN PAGE*/
+/*START HEADER SIGN IN */
+.header.sign-in{
+    @extend %header2;
+     .navbar-brand {
+            span {
+                color: red;
+            }
+        }
+}
+/*END HEADER SIGN IN*/
+/*START  SIGN IN*/
+.signin{
+    @extend %sign;
+}
+/*END SIGN IN*/
+/*END SIGN IN PAGE*/

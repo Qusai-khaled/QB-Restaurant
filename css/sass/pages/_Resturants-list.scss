@@ -1,0 +1,101 @@
+/*START Resturants list PAGE*/
+/*START HEADER Resturants */
+.header.resturants {
+    @extend %header2;
+}
+
+/*END HEADER Resturants */
+
+/*START HOME Resturants */
+.home.resturants {
+    .custom-select {
+        &:focus {
+            border-color: $back-green;
+            box-shadow: 0 0 0 0.2rem rgba($back-green, .25);
+        }
+    }
+
+    @include Lg {
+        padding: $padding + 50px;
+
+    }
+
+    @include Sm {
+        padding: 0;
+        padding-bottom: 15px;
+
+    }
+
+    @include Md {
+        padding: 0;
+        padding-bottom: 15px;
+
+    }
+
+    h2 {
+        padding: $padding;
+    }
+}
+
+/*END HOME Resturants */
+/*START resturants-list */
+.resturants-list {
+    padding: $padding;
+    background-color: $back-white;
+
+    h2 {
+        @extend %h2;
+        color: $back-black;
+    }
+
+    .resturant {
+        padding-top: 15px;
+    }
+
+    .btn.new {
+        background-color: red;
+        color: white;
+        cursor: default;
+        font-weight: bold;
+    }
+
+    .btn.Popular {
+        background-color: $back-green;
+        color: white;
+        cursor: default;
+        font-weight: bold;
+    }
+
+    .btn.offer {
+        background-color: gold;
+        color: $back-black;
+        cursor: default;
+        font-weight: bold;
+    }
+
+    h4 {
+        padding-top: 15px;
+        font-weight: bold;
+
+        .img {
+            padding-left: 5px;
+            color: $back-green;
+        }
+    }
+
+    i {
+        color: gold;
+    }
+
+    .btn.btn-primary {
+        @extend %button2;
+
+        &:hover {
+            background-color: $back-black;
+            color: $back-green;
+        }
+    }
+}
+
+/*END resturants-list */
+/*END Resturants list PAGE*/

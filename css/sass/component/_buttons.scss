@@ -1,0 +1,49 @@
+%button {
+    @include prefixer(transition, all 0.7s ease-in-out, moz o webkit);
+    padding: 0px 15px;
+    background-color: $back-green;
+    border: 0;
+
+    @include Md {
+        padding: 3px 17px;
+    }
+
+    &:hover {
+        background-color: #fff;
+    }
+
+
+}
+
+%button2 {
+    @include prefixer(transition, all 0.7s ease-in-out, moz o webkit);
+    color: $text-Color2;
+    background-color: $back-green;
+    border: 0;
+    border-radius: 7px;
+    padding: 7px 22px;
+}
+
+%button3 {
+    background-color: $back-green;
+    color: #fff;
+    padding: 6px 27px;
+
+    @include Xs {
+        padding: 6px 5px;
+    }
+}
+%button4{
+    @include prefixer(transition, all 0.7s ease-in-out, moz o webkit);
+     background-color: transparent;
+                    color: black;
+                    border: 2px solid $back-green;
+                    padding: 6px;
+                    border-radius: 15px;
+
+                    &:hover {
+                        background-color: $back-green;
+                        color:$text-Color2;
+                        border: 2px solid #1ad85e;
+                    }
+}

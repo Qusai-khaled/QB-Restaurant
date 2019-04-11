@@ -1,0 +1,72 @@
+/*START FOOD LIST PAGE*/
+
+/*START HEADER FOOD LIST */
+.header.food{
+    @extend %header2;
+}
+/*END HEADER FOOD LIST*/
+/*START HOME FOOD LIST*/
+.food-list {
+    text-align: center;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/snacks-1550600427.gif);
+    @include prefixer(background-size, cover, moz o webkit);
+
+    .overlay {
+        @extend %overlay;
+    }
+
+    .container {
+        padding: 15%;
+    }
+
+    h2 {
+        @extend %h2;
+        padding-bottom: 15px;
+    }
+
+    button {
+        @extend %button3;
+    }
+}
+/*END HOME FOOD LIST*/
+
+/*START LIST FOOD*/
+
+.list-food {
+    padding: $padding;
+    background-color: $back-white;
+    h2{
+        @extend %h2;
+        color: $back-black;
+    }
+    .card-deck{
+        img{
+            height: 348px;
+        }
+        h5{
+            text-transform: uppercase;
+        }
+        padding-top: 15px;
+        .card-body {
+        h4 {
+            font-size: 15px;
+        }
+
+        i {
+
+            color: gold;
+
+        }
+         .btn {
+        @extend %button2;
+             padding-top: 10px;
+        &:hover {
+            background-color: $back-black;
+            color: $back-green;
+        }
+    }
+    }
+    }
+}
+/*END LIST FOOD*/
+/*END FOOD LIST PAGE*/

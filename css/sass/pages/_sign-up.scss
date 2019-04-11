@@ -1,0 +1,26 @@
+/*START SIGN UP PAGE*/
+/*START HEADER SIGN UP */
+.header.sign-up{
+    @extend %header2;
+     .navbar-brand {
+            span {
+                color: red;
+            }
+        }
+}
+/*END HEADER SIGN UP*/
+/*START SIGN UP*/
+.signup{
+    @extend %sign;
+    .form-row{
+        >div{
+            padding-top: 10px;
+        }
+    }
+    .form-check{
+        padding-top: 15px;
+    }
+}
+/*END SIGN UP*/
+
+/*END SIGN UP PAGE*/

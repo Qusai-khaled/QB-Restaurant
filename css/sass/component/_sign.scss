@@ -1,0 +1,75 @@
+%sign {
+    padding: $padding +30px;
+    background-color: $back-white;
+
+    .sign-info {
+        border: 1px outset $back-green;
+        margin: auto;
+        margin-bottom: 10px;
+        background-color: white;
+        padding: 25px;
+        h3{
+            font-weight: bold;
+        }
+
+        p {
+            color: $text-Color;
+        }
+
+        .img {
+            margin-right: 5%;
+            float: left;
+            width: 20%;
+
+            i {
+                color: $back-green;
+            }
+        }
+
+        .info {
+            float: left;
+            width: 75%;
+
+            h4 {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            a {
+                color: $back-green;
+                text-decoration: none;
+            }
+        }
+        span{
+            color: $text-Color;
+        }
+        
+        .pas{
+            @include Xs{
+                
+                padding-top: 10px;
+            
+            }
+              @include Sm{
+                
+                padding-top: 10px;
+            
+            }
+            }
+
+        .form-control {
+            
+            &:focus {
+                border-color: $back-green;
+                box-shadow: 0 0 0 0.2rem rgba($back-green, .25);
+            }
+        }
+
+        button {
+            color: $text-Color2;
+            background-color: $back-green;
+            margin-top: 10px;
+        }
+    }
+}

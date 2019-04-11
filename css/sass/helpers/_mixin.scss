@@ -1,0 +1,54 @@
+//mixin media
+@mixin Xs{
+    @media (max-width:575px){
+        @content;
+    }
+}
+
+@mixin Sm{
+    @media (max-width:767px){
+        @content;
+    }
+}
+
+@mixin Md{
+    @media (min-width:768px)and (max-width:1170px){
+        @content;
+    }
+}
+
+@mixin Lg{
+    @media (min-width:1171px){
+        @content;
+    }
+}
+
+// end mixin media
+// START MIXIN PREFIXESR
+
+@mixin prefixer($property, $value ,$prefixes:()){
+    @each $prefix in $prefixes{
+        #{'-' + $prefix + '-' + $property }:$value;
+    }
+    #{$property}:$value ;
+    
+}
+
+
+// END MIXIN OVERLAY
+
+
+@mixin keyFarm($animation-name){
+        @-o-keyframes #{$animation-name}{
+        @content;
+    }
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+     @-moz-keyframes #{$animation-name}{
+        @content;
+    }
+     @keyframes #{$animation-name}{
+        @content;
+    }
+}

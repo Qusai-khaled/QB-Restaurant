@@ -1,0 +1,675 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Work Sans', 'Open Sans',sans-serif;
+}
+
+.food-list .overlay {
+  height: 100%;
+  background: rgba(35, 43, 54, 0.7);
+}
+
+.home h2, .easy h2, .choose h2, .collec h2, .order h2, .resturants-list h2, .food-list h2, .list-food h2 {
+  color: #F1FCF1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (max-width: 575px) {
+  .home h2, .easy h2, .choose h2, .collec h2, .order h2, .resturants-list h2, .food-list h2, .list-food h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1170px) {
+  .easy .tasty a h4, .easy .deliv a h4,
+  .easy .rest a h4 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 575px) {
+  .easy .tasty a h4, .easy .deliv a h4,
+  .easy .rest a h4 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1170px) {
+  .easy p, .easy .tasty a p, .easy .deliv a p,
+  .easy .rest a p, .choose p, .collec p, .order p {
+    font-size: 14px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .easy p, .easy .tasty a p, .easy .deliv a p,
+  .easy .rest a p, .choose p, .collec p, .order p {
+    font-size: 14px;
+    padding-top: 15px;
+  }
+}
+
+.header .navbar ul li button, .dellivery .navbar ul li button {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  padding: 0px 15px;
+  background-color: #1AD85E;
+  border: 0;
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .header .navbar ul li button, .dellivery .navbar ul li button {
+    padding: 3px 17px;
+  }
+}
+.header .navbar ul li button:hover, .dellivery .navbar ul li button:hover {
+  background-color: #fff;
+}
+
+.order button, .resturants-list .btn.btn-primary, .list-food .card-deck .card-body .btn {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  color: #F1FCF1;
+  background-color: #1AD85E;
+  border: 0;
+  border-radius: 7px;
+  padding: 7px 22px;
+}
+
+.home .input-group button, .food-list button {
+  background-color: #1AD85E;
+  color: #fff;
+  padding: 6px 27px;
+}
+@media (max-width: 575px) {
+  .home .input-group button, .food-list button {
+    padding: 6px 5px;
+  }
+}
+
+.delli .delli-info .addre .inf button {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-color: transparent;
+  color: black;
+  border: 2px solid #1AD85E;
+  padding: 6px;
+  border-radius: 15px;
+}
+.delli .delli-info .addre .inf button:hover {
+  background-color: #1AD85E;
+  color: #F1FCF1;
+  border: 2px solid #1ad85e;
+}
+
+.signin, .signup, .delli {
+  padding: 80px;
+  background-color: #F6F7F9;
+}
+.signin .sign-info, .signup .sign-info, .delli .sign-info {
+  border: 1px outset #1AD85E;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 25px;
+}
+.signin .sign-info h3, .signup .sign-info h3, .delli .sign-info h3 {
+  font-weight: bold;
+}
+.signin .sign-info p, .signup .sign-info p, .delli .sign-info p {
+  color: #74787B;
+}
+.signin .sign-info .img, .signup .sign-info .img, .delli .sign-info .img {
+  margin-right: 5%;
+  float: left;
+  width: 20%;
+}
+.signin .sign-info .img i, .signup .sign-info .img i, .delli .sign-info .img i {
+  color: #1AD85E;
+}
+.signin .sign-info .info, .signup .sign-info .info, .delli .sign-info .info {
+  float: left;
+  width: 75%;
+}
+.signin .sign-info .info h4, .signup .sign-info .info h4, .delli .sign-info .info h4 {
+  font-weight: bold;
+}
+.signin .sign-info p a, .signup .sign-info p a, .delli .sign-info p a {
+  color: #1AD85E;
+  text-decoration: none;
+}
+.signin .sign-info span, .signup .sign-info span, .delli .sign-info span {
+  color: #74787B;
+}
+@media (max-width: 575px) {
+  .signin .sign-info .pas, .signup .sign-info .pas, .delli .sign-info .pas {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .signin .sign-info .pas, .signup .sign-info .pas, .delli .sign-info .pas {
+    padding-top: 10px;
+  }
+}
+.signin .sign-info .form-control:focus, .signup .sign-info .form-control:focus, .delli .sign-info .form-control:focus {
+  border-color: #1AD85E;
+  box-shadow: 0 0 0 0.2rem rgba(26, 216, 94, 0.25);
+}
+.signin .sign-info button, .signup .sign-info button, .delli .sign-info button {
+  color: #F1FCF1;
+  background-color: #1AD85E;
+  margin-top: 10px;
+}
+
+/*START header*/
+.header, .dellivery {
+  background-color: #232B36;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.header .navbar, .dellivery .navbar {
+  padding: 15px;
+}
+.header .navbar .navbar-brand, .dellivery .navbar .navbar-brand {
+  font-size: 25px;
+}
+.header .navbar .navbar-brand span, .dellivery .navbar .navbar-brand span {
+  color: #1AD85E;
+}
+.header .navbar .navbar-toggler, .dellivery .navbar .navbar-toggler {
+  border: 2px solid #fff;
+  outline: none;
+}
+.header .navbar .navbar-toggler i, .dellivery .navbar .navbar-toggler i {
+  color: #fff;
+}
+.header .navbar a, .dellivery .navbar a {
+  color: #fff;
+  font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .header .navbar a, .dellivery .navbar a {
+    padding: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .header .navbar ul, .dellivery .navbar ul {
+    margin-left: 38%;
+  }
+}
+.header .navbar ul li, .dellivery .navbar ul li {
+  padding-left: 25px;
+}
+.header .navbar ul li:hover a, .dellivery .navbar ul li:hover a {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  color: #1AD85E;
+}
+
+/*END header*/
+/*START HEADER 2*/
+.header.resturants, .resturants.dellivery, .header.food, .food.dellivery, .header.sign-in, .sign-in.dellivery, .header.sign-up, .sign-up.dellivery {
+  background-color: #fff;
+}
+.header.resturants .navbar a, .resturants.dellivery .navbar a, .header.food .navbar a, .food.dellivery .navbar a, .header.sign-in .navbar a, .sign-in.dellivery .navbar a, .header.sign-up .navbar a, .sign-up.dellivery .navbar a {
+  color: #232B36;
+}
+.header.resturants .navbar .navbar-toggler, .resturants.dellivery .navbar .navbar-toggler, .header.food .navbar .navbar-toggler, .food.dellivery .navbar .navbar-toggler, .header.sign-in .navbar .navbar-toggler, .sign-in.dellivery .navbar .navbar-toggler, .header.sign-up .navbar .navbar-toggler, .sign-up.dellivery .navbar .navbar-toggler {
+  border: 2px solid #232B36;
+  outline: none;
+}
+.header.resturants .navbar .navbar-toggler i, .resturants.dellivery .navbar .navbar-toggler i, .header.food .navbar .navbar-toggler i, .food.dellivery .navbar .navbar-toggler i, .header.sign-in .navbar .navbar-toggler i, .sign-in.dellivery .navbar .navbar-toggler i, .header.sign-up .navbar .navbar-toggler i, .sign-up.dellivery .navbar .navbar-toggler i {
+  color: #232B36;
+}
+.header.resturants .navbar ul li button a, .resturants.dellivery .navbar ul li button a, .header.food .navbar ul li button a, .food.dellivery .navbar ul li button a, .header.sign-in .navbar ul li button a, .sign-in.dellivery .navbar ul li button a, .header.sign-up .navbar ul li button a, .sign-up.dellivery .navbar ul li button a {
+  color: #fff;
+}
+.header.resturants .navbar ul li button:hover, .resturants.dellivery .navbar ul li button:hover, .header.food .navbar ul li button:hover, .food.dellivery .navbar ul li button:hover, .header.sign-in .navbar ul li button:hover, .sign-in.dellivery .navbar ul li button:hover, .header.sign-up .navbar ul li button:hover, .sign-up.dellivery .navbar ul li button:hover {
+  background-color: #232B36;
+}
+.header.resturants .navbar ul li button:hover a, .resturants.dellivery .navbar ul li button:hover a, .header.food .navbar ul li button:hover a, .food.dellivery .navbar ul li button:hover a, .header.sign-in .navbar ul li button:hover a, .sign-in.dellivery .navbar ul li button:hover a, .header.sign-up .navbar ul li button:hover a, .sign-up.dellivery .navbar ul li button:hover a {
+  color: #1AD85E;
+}
+
+/*END HEADER2*/
+/*START HOME PAGE*/
+/*START HOME*/
+.home {
+  background-color: #232B36;
+  padding: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home p {
+  color: #F1FCF1;
+  padding: 15px;
+}
+@media (max-width: 575px) {
+  .home p {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1171px) {
+  .home .input-group {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .home .input-group {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 575px) {
+  .home .input-group input::-webkit-input-placeholder {
+    font-size: 11px;
+  }
+}
+.home .food-dish {
+  padding-top: 50px;
+}
+.home .food-dish > div {
+  width: 50%;
+  float: left;
+  color: #fff;
+}
+.home .food-dish > div i {
+  color: gold;
+}
+@media (max-width: 767px) {
+  .home .food-dish > div {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* END HOME*/
+/*START easy*/
+.easy {
+  background-color: #F6F7F9;
+  padding: 50px;
+}
+.easy h2 {
+  color: #000000;
+}
+@media (max-width: 575px) {
+  .easy h2 {
+    font-size: 17px;
+  }
+}
+.easy i {
+  padding-bottom: 25px;
+}
+.easy .tasty {
+  background-color: #1AD85E;
+  color: #F1FCF1;
+}
+.easy .tasty a {
+  color: #F1FCF1;
+  text-decoration: none;
+}
+.easy .tasty a > div {
+  padding: 20px;
+}
+.easy .deliv,
+.easy .rest {
+  background-color: #FFF;
+}
+.easy .deliv a,
+.easy .rest a {
+  color: #000000;
+  text-decoration: none;
+}
+.easy .deliv a > div,
+.easy .rest a > div {
+  padding: 20px;
+}
+
+/*END easy*/
+/*START choose*/
+.choose {
+  padding: 50px;
+}
+.choose h2 {
+  color: #000000;
+}
+@media (max-width: 575px) {
+  .choose h2 {
+    font-size: 17px;
+  }
+}
+.choose .card-deck {
+  padding-top: 20px;
+}
+.choose .card-deck .card-body .card-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .choose .card-deck .card-body .card-title {
+    font-size: 20px;
+  }
+}
+.choose .card-deck .card-footer {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.choose .card-deck .card-footer:hover {
+  background-color: #1AD85E;
+}
+.choose .card-deck .card-footer:hover button {
+  width: 100%;
+  font-weight: bold;
+  color: #F1FCF1;
+}
+
+/*END choose*/
+/*START COLLECTIONS*/
+.collec {
+  background-color: #F6F7F9;
+  padding: 50px;
+}
+.collec h2 {
+  color: #000000;
+}
+@media (max-width: 575px) {
+  .collec h2 {
+    font-size: 17px;
+  }
+}
+.collec .carousel ol li {
+  background-color: #1AD85E;
+  height: 12px;
+  width: 40px;
+}
+
+/*END COLLECTIONS*/
+/*START ORDER*/
+.order {
+  background-color: #232B36;
+  padding: 50px;
+}
+.order h2 {
+  padding-top: 10%;
+  color: #F1FCF1;
+}
+@media (max-width: 575px) {
+  .order h2 {
+    font-size: 17px;
+  }
+}
+.order p {
+  color: #F1FCF1;
+}
+.order button i {
+  padding-right: 5px;
+}
+@media (max-width: 767px) {
+  .order .orde {
+    text-align: center;
+  }
+}
+.order .orde .or {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-color: transparent;
+  border: 1px solid #F1FCF1;
+}
+.order .orde .or:hover {
+  background-color: #1AD85E;
+  border: none;
+}
+@media (max-width: 767px) {
+  .order .orde .or {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .order .orde .or {
+    margin-top: 15px;
+  }
+}
+.order .orde .or {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-color: transparent;
+  border: 1px solid #F1FCF1;
+}
+.order .orde .or:hover {
+  background-color: #1AD85E;
+  border: none;
+}
+@media (max-width: 767px) {
+  .order .orde .or {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .order .orde .or {
+    margin-top: 15px;
+  }
+}
+
+/*END ORDER*/
+/*END HOME PAGE*/
+/*START Resturants list PAGE*/
+/*START HEADER Resturants */
+/*END HEADER Resturants */
+/*START HOME Resturants */
+.home.resturants .custom-select:focus {
+  border-color: #1AD85E;
+  box-shadow: 0 0 0 0.2rem rgba(26, 216, 94, 0.25);
+}
+@media (min-width: 1171px) {
+  .home.resturants {
+    padding: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .home.resturants {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .home.resturants {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+}
+.home.resturants h2 {
+  padding: 50px;
+}
+
+/*END HOME Resturants */
+/*START resturants-list */
+.resturants-list {
+  padding: 50px;
+  background-color: #F6F7F9;
+}
+.resturants-list h2 {
+  color: #232B36;
+}
+.resturants-list .resturant {
+  padding-top: 15px;
+}
+.resturants-list .btn.new {
+  background-color: red;
+  color: white;
+  cursor: default;
+  font-weight: bold;
+}
+.resturants-list .btn.Popular {
+  background-color: #1AD85E;
+  color: white;
+  cursor: default;
+  font-weight: bold;
+}
+.resturants-list .btn.offer {
+  background-color: gold;
+  color: #232B36;
+  cursor: default;
+  font-weight: bold;
+}
+.resturants-list h4 {
+  padding-top: 15px;
+  font-weight: bold;
+}
+.resturants-list h4 .img {
+  padding-left: 5px;
+  color: #1AD85E;
+}
+.resturants-list i {
+  color: gold;
+}
+.resturants-list .btn.btn-primary:hover {
+  background-color: #232B36;
+  color: #1AD85E;
+}
+
+/*END resturants-list */
+/*END Resturants list PAGE*/
+/*START FOOD LIST PAGE*/
+/*START HEADER FOOD LIST */
+/*END HEADER FOOD LIST*/
+/*START HOME FOOD LIST*/
+.food-list {
+  text-align: center;
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/snacks-1550600427.gif);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.food-list .container {
+  padding: 15%;
+}
+.food-list h2 {
+  padding-bottom: 15px;
+}
+
+/*END HOME FOOD LIST*/
+/*START LIST FOOD*/
+.list-food {
+  padding: 50px;
+  background-color: #F6F7F9;
+}
+.list-food h2 {
+  color: #232B36;
+}
+.list-food .card-deck {
+  padding-top: 15px;
+}
+.list-food .card-deck img {
+  height: 348px;
+}
+.list-food .card-deck h5 {
+  text-transform: uppercase;
+}
+.list-food .card-deck .card-body h4 {
+  font-size: 15px;
+}
+.list-food .card-deck .card-body i {
+  color: gold;
+}
+.list-food .card-deck .card-body .btn {
+  padding-top: 10px;
+}
+.list-food .card-deck .card-body .btn:hover {
+  background-color: #232B36;
+  color: #1AD85E;
+}
+
+/*END LIST FOOD*/
+/*END FOOD LIST PAGE*/
+/*START SIGN IN PAGE*/
+/*START HEADER SIGN IN */
+.header.sign-in .navbar-brand span, .sign-in.dellivery .navbar-brand span {
+  color: red;
+}
+
+/*END HEADER SIGN IN*/
+/*START  SIGN IN*/
+/*END SIGN IN*/
+/*END SIGN IN PAGE*/
+/*START SIGN UP PAGE*/
+/*START HEADER SIGN UP */
+.header.sign-up .navbar-brand span, .sign-up.dellivery .navbar-brand span {
+  color: red;
+}
+
+/*END HEADER SIGN UP*/
+/*START SIGN UP*/
+.signup .form-row > div {
+  padding-top: 10px;
+}
+.signup .form-check {
+  padding-top: 15px;
+}
+
+/*END SIGN UP*/
+/*END SIGN UP PAGE*/
+.delli .delli-info .addre {
+  border: 2px solid #1AD85E;
+  margin: auto;
+  margin-top: 5px;
+  padding: 19px;
+}
+.delli .delli-info .addre .hom {
+  width: 25%;
+  float: left;
+}
+.delli .delli-info .addre .inf {
+  width: 70%;
+  float: left;
+}
+.delli .delli-info .addre .inf span {
+  color: #000;
+}
+
+/*START FOOTER*/
+.footer {
+  padding: 20px;
+  background-color: #1AD85E;
+  color: #F1FCF1;
+  font-size: 21px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1170px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media (min-width: 1171px) {
+  .footer .des {
+    float: right;
+  }
+}
+
+/*END FOOTER*/
+
+/*# sourceMappingURL=style.css.map */

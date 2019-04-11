@@ -1,0 +1,316 @@
+/*START HOME PAGE*/
+/*START HOME*/
+.home {
+    background-color: $back-black;
+    padding: $padding;
+    text-align: center;
+    text-transform: uppercase;
+
+    h2 {
+        @extend %h2;
+    }
+
+    p {
+        color: $text-Color2;
+        padding: 15px;
+
+        @include Xs {
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+
+    .input-group {
+        .form-control{
+            &:focus{
+
+            }
+        }
+        @include Lg {
+            width: 50%;
+            margin: auto;
+        }
+
+        @include Md {
+            width: 50%;
+            margin: auto;
+        }
+
+        input::-webkit-input-placeholder {
+            @include Xs {
+                font-size: 11px;
+            }
+
+        }
+
+        button {
+            @extend %button3;}
+    }
+
+    .food-dish {
+        padding-top: 50px;
+
+        > div {
+            width: 50%;
+            float: left;
+            color: #fff;
+
+            i {
+                color: gold;
+            }
+
+            @include Sm {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/* END HOME*/
+
+
+/*START easy*/
+.easy {
+    background-color: $back-white;
+    padding: $padding;
+
+    h2 {
+        @extend %h2;
+        color: $head-Color;
+
+        @include Xs {
+            font-size: 17px;
+
+        }
+    }
+
+    p {
+        @extend %p;
+    }
+
+    i {
+        padding-bottom: 25px;
+    }
+
+    .tasty {
+        background-color: $back-green;
+        color: $text-Color2;
+
+        a {
+
+            color: $text-Color2;
+            text-decoration: none;
+
+
+            > div {
+                padding: 20px;
+            }
+
+            h4 {
+                @extend %h4;
+            }
+
+            p {
+                @extend %p;
+            }
+
+        }
+    }
+
+    .deliv,
+    .rest {
+        background-color: #FFF;
+
+        a {
+            color: $head-Color;
+            text-decoration: none;
+
+
+            > div {
+                padding: 20px;
+            }
+
+            h4 {
+                @extend %h4;
+            }
+
+            p {
+                @extend %p;
+            }
+        }
+    }
+}
+
+/*END easy*/
+
+/*START choose*/
+.choose {
+    padding: $padding;
+
+
+    h2 {
+        @extend %h2;
+        color: $head-Color;
+
+        @include Xs {
+            font-size: 17px;
+
+        }
+    }
+
+    p {
+        @extend %p;
+    }
+
+    .card-deck {
+        padding-top: 20px;
+
+        .card-body {
+            .card-title {
+                font-size: 25px;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                @include Md {
+                    font-size: 20px;
+                }
+
+
+            }
+
+        }
+
+        .card-footer {
+            @include prefixer(transition, all 0.7s ease-in-out, moz o webkit);
+
+            &:hover {
+                background-color: $back-green;
+
+                button {
+                    width: 100%;
+                    font-weight: bold;
+                    color: $text-Color2;
+                }
+            }
+        }
+    }
+}
+
+/*END choose*/
+
+
+/*START COLLECTIONS*/
+
+.collec {
+    background-color: $back-white;
+    padding: $padding;
+
+    h2 {
+        @extend %h2;
+        color: $head-Color;
+
+        @include Xs {
+            font-size: 17px;
+
+        }
+    }
+
+    p {
+        @extend %p;
+    }
+
+    .carousel {
+        ol {
+            li {
+                background-color: $back-green;
+                height: 12px;
+                width: 40px;
+            }
+        }
+    }
+}
+
+/*END COLLECTIONS*/
+/*START ORDER*/
+.order {
+    background-color: $back-black;
+    padding: $padding;
+
+    h2 {
+        @extend %h2;
+        padding-top: 10%;
+        color: $text-Color2;
+
+        @include Xs {
+            font-size: 17px;
+
+        }
+    }
+
+    p {
+        @extend %p;
+        color: $text-Color2;
+    }
+
+    button {
+        @extend %button2;
+
+        i {
+            padding-right: 5px;
+        }
+    }
+
+    .orde {
+        @include Sm {
+            text-align: center;
+
+        }
+
+        .or {
+            @include prefixer(transition, all 0.7s ease-in-out, moz o webkit);
+            background-color: transparent;
+            border: 1px solid $text-Color2;
+
+            &:hover {
+                background-color: $back-green;
+                border: none;
+            }
+
+            @include Sm {
+                margin-top: 15px;
+
+            }
+
+            @include Md {
+                margin-top: 15px;
+
+            }
+        }
+
+        .or {
+            @include prefixer(transition, all 0.7s ease-in-out, moz o webkit);
+            background-color: transparent;
+            border: 1px solid $text-Color2;
+
+            &:hover {
+                background-color: $back-green;
+                border: none;
+            }
+
+            @include Sm {
+                margin-top: 15px;
+
+            }
+
+            @include Md {
+                margin-top: 15px;
+
+            }
+        }
+    }
+}
+
+/*END ORDER*/
+
+/*END HOME PAGE*/
